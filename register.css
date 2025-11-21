@@ -1,0 +1,108 @@
+body{
+    background-color: var(--background-color1);
+    scroll-behavior: smooth;
+}
+:root{
+    --background-color1: rgb(173, 216, 216);
+    --background-color2: white;
+    --background-color3: rgba(226, 218, 218, 0.575);
+    --background-color4: rgba(35, 197, 197, 0.63);
+    --background-color5: rgb(22, 155, 155);
+}
+.container{
+    background-color: var(--background-color2);
+    align-items: center;
+    margin-top: 200px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    border-radius: 10%;
+    display: block;
+    border: 5px solid var(--background-color2);
+    height: 440px;
+}
+h1{
+    font-family: monospace;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+input[type="email"], input[type="password"]{
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid rgb(233, 221, 221);
+    padding-left: 15px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--background-color3) ;
+}
+input[type="email"]{
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+:placeholder-shown{
+    font-size: 17px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type="checkbox"]{
+    font-size: 16px;
+}
+.code{
+    font-weight: bold;
+    color: rgba(37, 35, 35, 0.76);
+    padding: 5px;
+}
+input[type="email"], input[type="password"]:hover{
+    border-color: var(--background-color4);
+}
+button{
+    width: 100%;
+    border-radius: 40px;
+    border: none;
+    background-color: var(--background-color4);
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    transition-duration: 0.3s ease-in-out;
+}
+button:hover{
+    background-color: var(--background-color5);
+    translate: 3px 5px;
+    cursor: pointer;
+}
+button:active{
+    background-color: var(--background-color4);
+    cursor: pointer;
+}
+button:disabled{
+    cursor: not-allowed;
+    background-color: var(--background-color3);
+}
+p{
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(58, 56, 56);
+}
+a{
+color: brown;
+padding-left: 5px;
+}
+input:active{
+    border-color: var(--background-color4);
+    cursor: pointer;
+    translate: 5px 7px;
+}
+input:focus{
+    border-color: var(--background-color4);
+    cursor: pointer;
+    transform: scale(3deg);
+}
+input:active-view-transition{
+    translate: 3px;
+}
