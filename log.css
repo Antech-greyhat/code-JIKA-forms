@@ -1,0 +1,115 @@
+body{
+    background-color: var(--background-color1);
+    scroll-behavior: smooth;
+}
+:root{
+    --background-color1: rgba(224, 210, 210, 0.795);
+    --background-color2: white;
+    --background-color3: rgba(226, 218, 218, 0.575);
+    --background-color4: rgba(35, 197, 197, 0.63);
+    --background-color5: rgb(22, 155, 155);
+    --background-color6: rgb(238, 79, 106);
+    --background-color7: rgb(236, 18, 55);
+}
+.container{
+    background-color: var(--background-color2);
+    align-items: center;
+    margin-top: 200px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    border-radius: 10%;
+    display: block;
+    border: 5px solid var(--background-color2);
+    height: 400px;
+}
+h1{
+    font-family: monospace;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+input[type="email"], input[type="password"]{
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid rgb(233, 221, 221);
+    padding-left: 10px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--background-color3) ;
+}
+input[type="email"]{
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+:placeholder-shown{
+    font-size: 17px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+input[type="checkbox"]{
+    font-size: 16px;
+}
+.code{
+    font-weight: bold;
+    color: rgba(37, 35, 35, 0.76);
+    padding: 5px;
+}
+input[type="email"], input[type="password"]:hover{
+    border-color: none;
+    transform: scale(1.1);
+}
+button{
+    width: 100%;
+    border-radius: 40px;
+    border: none;
+    background-color: var(--background-color6);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    transition-duration: 0.3s ease-in-out;
+}
+button:hover{
+    background-color: var(--background-color7);
+    translate: 3px 5px;
+    cursor: pointer;
+}
+button:active{
+    background-color: var(--background-color4);
+    cursor: pointer;
+}
+button:disabled{
+    cursor: not-allowed;
+    background-color: var(--background-color3);
+}
+p{
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(58, 56, 56);
+    margin-top: 0;
+    text-align: center;
+}
+a{
+color: var(--background-color5);
+padding-left: 5px;
+}
+input:active{
+    border-color: var(--background-color4);
+    cursor: pointer;
+    translate: 5px 7px;
+}
+input:focus{
+    border-color: var(--background-color4);
+    cursor: pointer;
+    transform: scale(3deg);
+}
+input:active-view-transition{
+    translate: 3px;
+}
